@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container ">
+            <div class="container-header">
+                <div class="left">
+                    <a class="a1" href="#1">START BOOTSTRAP</a>
+                </div>
+                <div class="right">
+                    <a class="a1" href="#2">PORTFOLIO </a>
+                    <a class="a1" href="#3">ABOUT</a>
+                    <a class="a1" href="#4">CONTACT </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="1" class="section_one">
+            <div class="container seue">
+                <div class="shi">
+                    <div class="hsi">
+                        <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg"
+                            alt="">
+                        <h1>START BOOTSTRAP</h1>
+                        <div class="star-i">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Graphic Artist - Web Designer - Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="2" class="section_two">
+            <div>
+                <div class="section__two">
+                    <h2>PORTFOLIO</h2>
+                    <div class="star-i">
+                        <i id="star_1" class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="cardImg">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="two_img_container">
+                    <div class="two_imgs">
+
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="two_imgs">
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="card_wrapper">
+                            <img class="two_img"
+                                src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png"
+                                alt="">
+                            <div class="cardImg">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="3" class="section_three">
+            <div class="container_three">
+                <div class="tree_about">
+                    <div>
+                        <h2>ABOUT</h2>
+                    </div>
+                    <div class="star-i">
+                        <i id="star_2" class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="three_fact">
+                    <div class="fact_1">
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                            complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                            stylesheets for easy customization.</p>
+                    </div>
+                    <div class="fact_1">
+                        <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and
+                            add your email address to the contact form to make it fully functional!</p>
+                    </div>
+                </div>
+                <div class="three_buttom">
+                    <button><i class="fa-solid fa-download"></i> Free Download</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="4" class="section_four">
+            <div class="container_four">
+                <div class="four_contact">
+                    <h2>CONTACT ME</h2>
+                    <div class="star-i">
+                        <i id="star_3" class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Form — har bir field o'z wrapper'iga ega -->
+                <form action="" class="form" novalidate id="contactForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full name" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <div class="error-messages">
+                            <span class="error-msg">A name is required.</span>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email address" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <div class="error-messages">
+                            <span class="error-msg" data-rule="required">An email is required.</span>
+                            <span class="error-msg" data-rule="format">Email is not valid.</span>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone number" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <div class="error-messages">
+                            <span class="error-msg">A phone number is required.</span>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <textarea id="message" cols="30" rows="6" placeholder="Message" required></textarea>
+                        <span class="error-icon textarea-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <div class="error-messages">
+                            <span class="error-msg">A message is required.</span>
+                        </div>
+                    </div>
+
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container_footer">
+                <div class="footer">
+                    <div class="loko sd">
+                        <h2>Location</h2>
+                        <p>2215 John Daniel Drive <br>
+                            Clark, MO 65243</p>
+                    </div>
+                    <div class="loko">
+                        <div class="looksa">
+                            <h2>Around the Web</h2>
+                            <div class="icond">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loko">
+                        <h2>About Freelancer</h2>
+                        <p>Freelance is a free to use, MIT licensed Bootstrap theme created by</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="aqir">
+            <p>Muratbaev Azatbek website @ 2026</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

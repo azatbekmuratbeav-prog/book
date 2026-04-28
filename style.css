@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    background-color: #2c3e50;
+}
+
+.container-header {
+    height: 70px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.container-header .right {
+    display: flex;
+    font-size: 18px;
+    gap: 40px;
+    padding-right: 20px;
+}
+
+
+.a1 {
+    text-decoration: none;
+    color: white;
+}
+
+.left a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    color: rgb(255, 253, 253);
+}
+
+.right .a1:hover {
+    color: #1abc9c;
+}
+
+/* ===== SECTION ONE ===== */
+.section_one {
+    height: 100vh;
+    background-color: #1abc9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shi img {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.seue {
+    background-color: #1abc9c;
+    width: 100%;
+    margin: 10px 100px;
+}
+
+.shi {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shi h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 68px;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.star-i {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.star-i::before,
+.star-i::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.star-i i {
+    color: white;
+    font-size: 30px;
+}
+
+.shi p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 15px;
+}
+
+/* ===== SECTION TWO ===== */
+.section_two {
+    min-height: 100vh;
+}
+
+.section__two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 0px 10px 0px;
+}
+
+.section__two h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 53px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section__two .star-i::before,
+.section__two .star-i::after {
+    background-color: #2c3e50;
+}
+
+
+
+.card_wrapper {
+    position: relative;
+    width: 360px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.two_img_container {
+    display: flex;
+    flex-direction: column;
+    /* ← qo'shing */
+    gap: 10px;
+    margin: 0px 100px;
+    background-color: transparent;
+    /* ← qizil fon olib tashlang */
+}
+
+.two_imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.two_img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cardImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+/* Yashil overlay */
+.card_wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9c;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.card_wrapper:hover::after {
+    opacity: 0.7;
+}
+
+.card_wrapper:hover .cardImg {
+    opacity: 1;
+}
+
+
+.section__two i {
+    color: #2c3e50;
+}
+
+.two_img_container {
+    margin: 0px 100px;
+}
+
+/* ===== SECTION THREE ===== */
+.section_three {
+    min-height: 100vh;
+    background-color: #1abc9c;
+    color: white;
+}
+
+.container_three {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.container_three h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 53px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tree_about {
+    text-align: center;
+    padding-top: 85px;
+    margin-bottom: 30px;
+}
+
+.three_fact {
+    display: flex;
+    gap: 30px;
+}
+
+.fact_1 {
+    max-width: 330px;
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.three_buttom {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+
+.three_buttom button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+}
+
+.three_buttom button:hover {
+    background-color: white;
+    color: #030303;
+    border-color: transparent;
+}
+
+/* ===== SECTION FOUR — CONTACT ===== */
+.section_four {
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+.container_four {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.four_contact {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.four_contact h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 53px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Section four uchun star-i ni qayta override — chiziqlar #2c3e50 bo'lsin */
+.section_four .star-i::before,
+.section_four .star-i::after {
+    background-color: #2c3e50;
+}
+
+.section_four .star-i i {
+    color: #2c3e50;
+}
+
+/* ===== FORM ===== */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Har bir field uchun wrapper */
+.form-group {
+    position: relative;
+}
+
+/* Input va textarea umumiy stil */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 40px 12px 4px;
+    /* o'ngda icon uchun joy */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #2c3e50;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* Focus holati — ko'k chiziq */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #2c3e50;
+}
+
+/* ✅ Valid holati — yashil chiziq */
+.form-group.is-valid input,
+.form-group.is-valid textarea {
+    border-bottom-color: #1abc9c;
+}
+
+/* ❌ Invalid holat — qizil chiziq */
+.form-group.is-invalid input,
+.form-group.is-invalid textarea {
+    border-bottom-color: #e74c3c;
+}
+
+/* "!" belgisi — o'ng tomonda */
+.error-icon {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    color: #e74c3c;
+    font-size: 18px;
+    opacity: 0;
+    /* default: ko'rinmaydi */
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+/* Textarea uchun icon tepada bo'lsin */
+.error-icon.textarea-icon {
+    top: 14px;
+}
+
+/* Faqat invalid bo'lganda "!" ko'rinadi */
+.form-group.is-invalid .error-icon {
+    opacity: 1;
+}
+
+/* Xato xabarlari */
+.error-messages {
+    margin-top: 6px;
+    min-height: 20px;
+}
+
+.error-msg {
+    display: none;
+    /* default: yashirin */
+    color: #e74c3c;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Submit button */
+.form button[type="submit"] {
+    align-self: center;
+    background-color: #2c3e50;
+    border: 2px solid #2c3e50;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form button[type="submit"]:hover {
+    background-color: transparent;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.container_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #2c3e50;
+    justify-content: space-between;
+
+}
+
+.footer {
+    min-height: 30vh;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 100px 0px;
+}
+
+.loko {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0px 40px;
+}
+
+.loko h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.loko p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.loko a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 15px 15px;
+    border-radius: 100%;
+    gap: 30px;
+    margin-top: 5px;
+}
+
+
+
+.loko a:hover {
+    background-color: white;
+    color: #2c3e50;
+    border-color: transparent;
+}
+
+.looksa {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 20px 0px 30px;
+}
+
+
+
+.sd {
+    padding: 0px 30px;
+}
+
+.aqir {
+    background-color: #20272e;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
