@@ -11,20 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="container ">
-            <div class="container-header">
-                <div class="left">
-                    <a class="a1" href="#1">START BOOTSTRAP</a>
-                </div>
-                <div class="right">
-                    <a class="a1" href="#2">PORTFOLIO </a>
-                    <a class="a1" href="#3">ABOUT</a>
-                    <a class="a1" href="#4">CONTACT </a>
-                </div>
+   <header>
+    <div class="container">
+        <div class="container-header">
+            <div class="left">
+                <a class="a1" href="#1">START BOOTSTRAP</a>
+            </div>
+
+            <!-- Hamburger tugmasi -->
+            <button id="hamburger-btn" class="hamburger">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </button>
+
+            <div class="right" id="nav-menu">
+                <a class="a1" href="#2">PORTFOLIO</a>
+                <a class="a1" href="#3">ABOUT</a>
+                <a class="a1" href="#4">CONTACT</a>
+                <button id="mode-btn" class="dark">
+                    <span id="mode-icon"><i class="fa-solid fa-moon" style="color: rgb(251, 252, 251);"></i></span>
+                </button>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <section id="1" class="section_one">
@@ -150,10 +159,8 @@
                     </div>
                 </div>
 
-                <!-- Form — har bir field o'z wrapper'iga ega -->
                 <form action="" class="form" novalidate id="contactForm">
 
-                    <!-- Full Name -->
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Full name" required>
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
@@ -162,7 +169,6 @@
                         </div>
                     </div>
 
-                    <!-- Email -->
                     <div class="form-group">
                         <input type="email" id="email" placeholder="Email address" required>
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
