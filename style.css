@@ -4,21 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Oddiy holat (Light mode) */
 body {
     background-color: white;
     color: black;
     transition: 0.5s;
-    /* Ranglar silliq o'zgarishi uchun */
 }
 
-/* Dark mode yoqilgandagi holat */
 .dark-mode {
     background-color: #1a1a1a;
     color: white;
 }
-
-
 
 .dark {
     background-color: #2c3e50;
@@ -55,7 +50,6 @@ header {
     padding-right: 20px;
 }
 
-
 .a1 {
     text-decoration: none;
     color: white;
@@ -71,7 +65,6 @@ header {
 .right .a1:hover {
     color: #1abc9c;
 }
-
 
 /* ===== SECTION ONE ===== */
 .section_one {
@@ -162,7 +155,9 @@ header {
     background-color: #2c3e50;
 }
 
-
+.section__two i {
+    color: #2c3e50;
+}
 
 .card_wrapper {
     position: relative;
@@ -176,11 +171,8 @@ header {
 .two_img_container {
     display: flex;
     flex-direction: column;
-    /* ← qo'shing */
     gap: 10px;
     margin: 0px 100px;
-    background-color: transparent;
-    /* ← qizil fon olib tashlang */
 }
 
 .two_imgs {
@@ -208,7 +200,6 @@ header {
     z-index: 2;
 }
 
-/* Yashil overlay */
 .card_wrapper::after {
     content: '';
     position: absolute;
@@ -220,7 +211,6 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
-
 }
 
 .card_wrapper:hover::after {
@@ -229,15 +219,6 @@ header {
 
 .card_wrapper:hover .cardImg {
     opacity: 1;
-}
-
-
-.section__two i {
-    color: #2c3e50;
-}
-
-.two_img_container {
-    margin: 0px 100px;
 }
 
 /* ===== SECTION THREE ===== */
@@ -323,7 +304,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* Section four uchun star-i ni qayta override — chiziqlar #2c3e50 bo'lsin */
 .section_four .star-i::before,
 .section_four .star-i::after {
     background-color: #2c3e50;
@@ -340,12 +320,10 @@ header {
     gap: 24px;
 }
 
-/* Har bir field uchun wrapper */
 .form-group {
     position: relative;
 }
 
-/* Input va textarea umumiy stil */
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -353,7 +331,6 @@ header {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 12px 40px 12px 4px;
-    /* o'ngda icon uchun joy */
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     color: #2c3e50;
@@ -367,25 +344,21 @@ header {
     color: #aaa;
 }
 
-/* Focus holati — ko'k chiziq */
 .form-group input:focus,
 .form-group textarea:focus {
     border-bottom-color: #2c3e50;
 }
 
-/* ✅ Valid holati — yashil chiziq */
 .form-group.is-valid input,
 .form-group.is-valid textarea {
     border-bottom-color: #1abc9c;
 }
 
-/* ❌ Invalid holat — qizil chiziq */
 .form-group.is-invalid input,
 .form-group.is-invalid textarea {
     border-bottom-color: #e74c3c;
 }
 
-/* "!" belgisi — o'ng tomonda */
 .error-icon {
     position: absolute;
     right: 8px;
@@ -393,22 +366,14 @@ header {
     color: #e74c3c;
     font-size: 18px;
     opacity: 0;
-    /* default: ko'rinmaydi */
     transition: opacity 0.3s;
     pointer-events: none;
 }
 
-/* Textarea uchun icon tepada bo'lsin */
-.error-icon.textarea-icon {
-    top: 14px;
-}
-
-/* Faqat invalid bo'lganda "!" ko'rinadi */
 .form-group.is-invalid .error-icon {
     opacity: 1;
 }
 
-/* Xato xabarlari */
 .error-messages {
     margin-top: 6px;
     min-height: 20px;
@@ -416,13 +381,11 @@ header {
 
 .error-msg {
     display: none;
-    /* default: yashirin */
     color: #e74c3c;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
 }
 
-/* Submit button */
 .form button[type="submit"] {
     align-self: center;
     background-color: #2c3e50;
@@ -445,6 +408,7 @@ header {
     color: #2c3e50;
 }
 
+/* ===== FOOTER ===== */
 footer {
     background-color: #2c3e50;
     color: white;
@@ -455,7 +419,6 @@ footer {
     margin: 0 auto;
     background-color: #2c3e50;
     justify-content: space-between;
-
 }
 
 .footer {
@@ -497,8 +460,6 @@ footer {
     margin-top: 5px;
 }
 
-
-
 .loko a:hover {
     background-color: white;
     color: #2c3e50;
@@ -512,8 +473,6 @@ footer {
     gap: 30px;
     padding: 0px 20px 0px 30px;
 }
-
-
 
 .sd {
     padding: 0px 30px;
@@ -532,14 +491,11 @@ footer .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* Sig'masa pastga tushirish uchun */
     gap: 20px;
-    /* Elementlar orasida masofa */
 }
 
 footer .footer-item {
     flex: 1 1 300px;
-    /* Minimal 300px kenglikni egallaydi */
     text-align: center;
 }
 
@@ -547,114 +503,93 @@ footer .footer-item {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* Sig'masa pastga tushirish uchun */
     gap: 20px;
-    /* Elementlar orasida masofa */
 }
 
 .looksa .icond-item {
     flex: 1 1 300px;
-    /* Minimal 300px kenglikni egallaydi */
     text-align: center;
 }
 
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-    .container-header {
-        position: relative;
-        /* Menyu tugmaga bog'lanishi uchun shart */
+
+    .hamburger {
+        display: block;
     }
 
     .right {
         display: none !important;
-        /* Kichik ekranlarda menyu yashirin bo'ladi */
         flex-direction: column;
         position: absolute;
-
-        /* Menyu o'lchami va o'rni */
         top: 60px;
-        /* Tugmadan pastga tushish masofasi */
         right: 0;
-        /* O'ng tomonga yopishib turadi */
         width: 200px;
-        /* Butun ekranni emas, faqat 200px egallaydi */
-
         background-color: #2c3e50;
         padding: 15px;
         border-radius: 8px;
-        /* Burchaklarini biroz yumaloq qilamiz */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        /* Chiroyli soya */
         z-index: 1000;
     }
 
     .right.active {
         display: flex !important;
-        /* Menyu faollashganda ko'rinadi */
     }
 
-    /* Menyu ichidagi havolalar */
     .right a {
         margin: 8px 0;
         text-align: left;
-        /* Matnni chapga tekislaymiz */
         font-size: 16px;
     }
-}
 
-@media (max-width: 768px) {
-
-    /* Asosiy blokni ustma-ust (column) holatiga keltiramiz */
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Hammasini o'rtaga tekislaydi */
-        text-align: center;
-        /* Matnlarni markazga suradi */
-        gap: 40px;
-        /* Har bir blok orasida masofa qoldiradi */
-        padding: 40px 10px;
-        /* Yon tomonlardan bo'shliq */
+    .two_img_container {
+        margin: 0 10px;
     }
 
-    /* Har bir ustun (Loko) endi ekranni to'liq egallaydi */
+    .two_imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_wrapper {
+        width: 100%;
+        max-width: 400px;
+        margin: 8px auto;
+    }
+
+    .two_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section__two h2 {
+        font-size: 32px;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 10px;
+    }
+
     .loko {
         width: 100% !important;
         max-width: 300px;
-        /* Matn juda yoyilib ketmasligi uchun */
     }
 
-    /* Ikonkalar qatorini ham markazga olamiz */
     .icond {
         display: flex;
         justify-content: center;
         gap: 15px;
         margin-top: 15px;
-    }
-}
-
-/* Asosiy (kompyuter va notebook) uchun */
-.hamburger {
-    display: none;
-    /* Standart holatda butunlay yashirish */
-}
-
-/* Faqat mobil ekranlar uchun */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        /* Faqat mobilda ko'rsatish */
-        cursor: pointer;
-        /* qolgan stillar... */
-    }
-
-    .right {
-        display: none;
-        /* Mobilda menyu yashirinadi */
-    }
-
-    .right.active {
-        display: flex;
-        /* Tugma bosilganda chiqadi */
     }
 }
